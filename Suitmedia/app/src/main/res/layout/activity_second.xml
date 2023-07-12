@@ -12,8 +12,8 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/white"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:titleTextColor="@android:color/black"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/black" />
 
     <View
         android:layout_width="match_parent"
@@ -23,49 +23,49 @@
 
     <TextView
         android:id="@+id/tv_welcome"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/welcome"
-        style="@style/TextAppearance.MaterialComponents.Subtitle2"
-        android:textColor="@color/grey"
-        android:layout_marginTop="8dp"
         android:layout_marginHorizontal="16dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:text="@string/welcome"
+        android:textColor="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <TextView
         android:id="@+id/tv_name"
+        style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name_example"
         android:layout_marginHorizontal="16dp"
-        style="@style/TextAppearance.AppCompat.Title"
-        app:layout_constraintTop_toBottomOf="@id/tv_welcome"
+        android:text="@string/name_example"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-    
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
+
     <TextView
         android:id="@+id/tv_selected_user"
+        style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/TextAppearance.AppCompat.Title"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_name"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/no_user_selected"
         android:textAlignment="center"
-        android:text="@string/no_user_selected"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
 
     <Button
         android:id="@+id/bt_choose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/choose_a_user"/>
+        android:text="@string/choose_a_user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

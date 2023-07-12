@@ -13,88 +13,89 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/background"
+            android:contentDescription="@string/background_image"
             android:scaleType="centerCrop"
-            android:contentDescription="@string/background_image" />
+            android:src="@drawable/background" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/iv_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp">
+                android:layout_marginTop="64dp"
+                android:layout_marginBottom="32dp"
+                android:contentDescription="@string/cd_image"
+                android:src="@drawable/ic_photo"
+                app:layout_constraintBottom_toTopOf="@id/til_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
-                    android:id="@+id/iv_login"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/til_palindrom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_login">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_photo"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toTopOf="@id/til_name"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="64dp"
-                    android:layout_marginBottom="32dp"
-                    android:contentDescription="@string/cd_image" />
+                    android:maxLength="255"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/til_name"
-                    app:boxBackgroundColor="@color/white"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_login"
-                    app:layout_constraintBottom_toTopOf="@+id/til_palindrom"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_palindrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_palindrome"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/bt_check"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_palindrom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/hint_name">
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ed_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:maxLength="255"
-                        android:maxLines="1" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:maxLength="255"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/til_palindrom"
-                    app:boxBackgroundColor="@color/white"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/til_name"
-                    app:layout_constraintBottom_toTopOf="@id/bt_check"
-                    android:layout_marginTop="8dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/hint_palindrome">
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ed_palindrom"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:maxLength="255"
-                        android:maxLines="1" />
-                </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/bt_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:text="@string/bt_check"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_palindrom" />
 
-                <Button
-                    android:id="@+id/bt_check"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/til_palindrom"
-                    android:layout_marginTop="64dp"
-                    android:text="@string/bt_check"/>
-
-                <Button
-                    android:id="@+id/bt_next"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/bt_check"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/bt_next"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/bt_next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bt_check" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </RelativeLayout>
-
 
 
 </ScrollView>
