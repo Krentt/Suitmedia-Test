@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".first.MainActivity">
+    tools:context=".ui.first.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -83,7 +83,7 @@
                     android:text="@string/bt_check"/>
 
                 <Button
-                    android:id="@id/bt_next"
+                    android:id="@+id/bt_next"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"

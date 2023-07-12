@@ -1,4 +1,4 @@
-package com.example.suitmedia.first
+package com.example.suitmedia.ui.first
 
 import android.content.Context
 import android.content.Intent
@@ -8,7 +8,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.suitmedia.databinding.ActivityMainBinding
-import com.example.suitmedia.second.SecondActivity
+import com.example.suitmedia.ui.second.SecondActivity
 
 class MainActivity : AppCompatActivity() {
 

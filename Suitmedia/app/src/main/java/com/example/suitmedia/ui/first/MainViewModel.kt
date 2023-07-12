@@ -1,4 +1,4 @@
-package com.example.suitmedia.first
+package com.example.suitmedia.ui.first
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
