@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Suitmedia</string>
+    <string name="bt_check">CHECK</string>
+    <string name="bt_next">NEXT</string>
+    <string name="cd_image">icon photo</string>
+    <string name="background_image">Background Image</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_palindrome">Palindrome</string>
+</resources>
