@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.suitmedia.R
 import com.example.suitmedia.adapter.LoadingStateAdapter
 import com.example.suitmedia.adapter.UserListAdapter
 import com.example.suitmedia.databinding.ActivityThirdBinding

@@ -10,7 +10,6 @@ import androidx.paging.cachedIn
 import com.example.suitmedia.data.UserRepository
 import com.example.suitmedia.di.Injection
 import com.example.suitmedia.network.DataItem
-import com.example.suitmedia.ui.first.MainViewModel
 
 class ThirdViewModel(userRepository: UserRepository): ViewModel() {
 

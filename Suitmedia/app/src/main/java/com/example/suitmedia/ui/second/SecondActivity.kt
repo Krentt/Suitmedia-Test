@@ -3,10 +3,8 @@ package com.example.suitmedia.ui.second
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.suitmedia.R
 import com.example.suitmedia.databinding.ActivitySecondBinding
 import com.example.suitmedia.ui.third.ThirdActivity
-import kotlinx.coroutines.selects.select
 
 class SecondActivity : AppCompatActivity() {
 
